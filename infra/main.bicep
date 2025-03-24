@@ -44,3 +44,7 @@ module search 'core/search/search-services.bicep' = {
     }
   }
 }
+
+// AI Search Outputs
+output AZURE_SEARCH_ENDPOINT string = search.outputs.endpoint
+output AZURE_SEARCH_KEY string = search.outputs.primaryKey

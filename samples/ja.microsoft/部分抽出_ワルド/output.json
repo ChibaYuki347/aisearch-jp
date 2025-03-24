@@ -1,0 +1,68 @@
+{
+    "@odata.context": "https://srch-guegkrklzq5jk.search.windows.net/indexes('test-index')/$metadata#docs(*)",
+    "value": [
+        {
+            "@search.score": 1.0,
+            "id": "3",
+            "company_name_lucene": "株式会社ワールドスマイル",
+            "company_name_microsoft": "株式会社ワールドスマイル",
+            "company_name_keyword": "株式会社ワールドスマイル"
+        },
+        {
+            "@search.score": 1.0,
+            "id": "9",
+            "company_name_lucene": "しおワールド",
+            "company_name_microsoft": "しおワールド",
+            "company_name_keyword": "しおワールド"
+        },
+        {
+            "@search.score": 1.0,
+            "id": "2",
+            "company_name_lucene": "有限会社コロンブス・ワールド",
+            "company_name_microsoft": "有限会社コロンブス・ワールド",
+            "company_name_keyword": "有限会社コロンブス・ワールド"
+        },
+        {
+            "@search.score": 1.0,
+            "id": "5",
+            "company_name_lucene": "特定非営利活動法人ワールド会",
+            "company_name_microsoft": "特定非営利活動法人ワールド会",
+            "company_name_keyword": "特定非営利活動法人ワールド会"
+        },
+        {
+            "@search.score": 1.0,
+            "id": "7",
+            "company_name_lucene": "ワールド",
+            "company_name_microsoft": "ワールド",
+            "company_name_keyword": "ワールド"
+        },
+        {
+            "@search.score": 1.0,
+            "id": "6",
+            "company_name_lucene": "ワールドワン有限会社",
+            "company_name_microsoft": "ワールドワン有限会社",
+            "company_name_keyword": "ワールドワン有限会社"
+        },
+        {
+            "@search.score": 1.0,
+            "id": "8",
+            "company_name_lucene": "1ワールド",
+            "company_name_microsoft": "1ワールド",
+            "company_name_keyword": "1ワールド"
+        },
+        {
+            "@search.score": 1.0,
+            "id": "1",
+            "company_name_lucene": "ワールドブリッジ株式会社",
+            "company_name_microsoft": "ワールドブリッジ株式会社",
+            "company_name_keyword": "ワールドブリッジ株式会社"
+        },
+        {
+            "@search.score": 1.0,
+            "id": "10",
+            "company_name_lucene": "株式会社ワールド",
+            "company_name_microsoft": "株式会社ワールド",
+            "company_name_keyword": "株式会社ワールド"
+        }
+    ]
+}

@@ -1,0 +1,33 @@
+{
+    "@odata.context": "https://srch-guegkrklzq5jk.search.windows.net/indexes('test-index')/$metadata#docs(*)",
+    "value": [
+        {
+            "@search.score": 1.0,
+            "id": "4",
+            "company_name_lucene": "ワールドミリョクセンター株式会社",
+            "company_name_microsoft": "ワールドミリョクセンター株式会社",
+            "company_name_keyword": "ワールドミリョクセンター株式会社"
+        },
+        {
+            "@search.score": 1.0,
+            "id": "7",
+            "company_name_lucene": "ワールド",
+            "company_name_microsoft": "ワールド",
+            "company_name_keyword": "ワールド"
+        },
+        {
+            "@search.score": 1.0,
+            "id": "6",
+            "company_name_lucene": "ワールドワン有限会社",
+            "company_name_microsoft": "ワールドワン有限会社",
+            "company_name_keyword": "ワールドワン有限会社"
+        },
+        {
+            "@search.score": 1.0,
+            "id": "1",
+            "company_name_lucene": "ワールドブリッジ株式会社",
+            "company_name_microsoft": "ワールドブリッジ株式会社",
+            "company_name_keyword": "ワールドブリッジ株式会社"
+        }
+    ]
+}
