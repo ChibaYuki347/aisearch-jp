@@ -13,6 +13,7 @@ def create_index(index_name:str, ai_search_endpoint:str, ai_search_key:str):
       { "name": "company_name_lucene", "type": "Edm.String", "searchable": True, "filterable": False, "retrievable": True, "stored": True, "sortable": False, "facetable": False, "key": False, "indexAnalyzer": None, "searchAnalyzer": None, "analyzer": "ja.lucene", "dimensions": None, "vectorSearchProfile": None, "vectorEncoding": None, "synonymMaps": []    },
       { "name": "company_name_microsoft", "type": "Edm.String", "searchable": True, "filterable": False, "retrievable": True, "stored": True, "sortable": False, "facetable": False, "key": False, "indexAnalyzer": None, "searchAnalyzer": None, "analyzer": "ja.microsoft", "dimensions": None, "vectorSearchProfile": None, "vectorEncoding": None, "synonymMaps": []    },
       { "name": "company_name_keyword", "type": "Edm.String", "searchable": True, "filterable": False, "retrievable": True, "stored": True, "sortable": False, "facetable": False, "key": False, "indexAnalyzer": None, "searchAnalyzer": None, "analyzer": "keyword", "dimensions": None, "vectorSearchProfile": None, "vectorEncoding": None, "synonymMaps": []    },
+      { "name": "employee_count", "type": "Edm.Int32", "searchable": False, "filterable": True, "retrievable": True, "stored": True, "sortable": True, "facetable": True, "key": False, "indexAnalyzer": None, "searchAnalyzer": None, "analyzer": None, "dimensions": None, "vectorSearchProfile": None, "vectorEncoding": None, "synonymMaps": [] }
     ],
     "scoringProfiles": [],
     "corsOptions": None,
@@ -75,15 +76,15 @@ if __name__ == "__main__":
 
         # Add sample documents
     sample_documents = [
-    {"id": "1", "company_name_lucene": "ワールドブリッジ株式会社", "company_name_microsoft": "ワールドブリッジ株式会社","company_name_keyword": "ワールドブリッジ株式会社"},
-    {"id": "2", "company_name_lucene": "有限会社コロンブス・ワールド", "company_name_microsoft": "有限会社コロンブス・ワールド","company_name_keyword": "有限会社コロンブス・ワールド"},
-    {"id": "3", "company_name_lucene": "株式会社ワールドスマイル", "company_name_microsoft": "株式会社ワールドスマイル","company_name_keyword": "株式会社ワールドスマイル"},
-    {"id": "4", "company_name_lucene": "ワールドミリョクセンター株式会社", "company_name_microsoft": "ワールドミリョクセンター株式会社","company_name_keyword": "ワールドミリョクセンター株式会社"},
-    {"id": "5", "company_name_lucene": "特定非営利活動法人ワールド会", "company_name_microsoft": "特定非営利活動法人ワールド会", "company_name_keyword": "特定非営利活動法人ワールド会"},
-    {"id": "6", "company_name_lucene": "ワールドワン有限会社", "company_name_microsoft": "ワールドワン有限会社", "company_name_keyword": "ワールドワン有限会社"},
-    {"id": "7", "company_name_lucene": "ワールド", "company_name_microsoft": "ワールド", "company_name_keyword": "ワールド"},
-    {"id": "8", "company_name_lucene": "1ワールド", "company_name_microsoft": "1ワールド", "company_name_keyword": "1ワールド"},
-    {"id": "9", "company_name_lucene": "しおワールド", "company_name_microsoft": "しおワールド", "company_name_keyword": "しおワールド"},
-    {"id": "10", "company_name_lucene": "株式会社ワールド", "company_name_microsoft": "株式会社ワールド", "company_name_keyword": "株式会社ワールド"},
+    {"id": "1", "company_name_lucene": "ワールドブリッジ株式会社", "company_name_microsoft": "ワールドブリッジ株式会社","company_name_keyword": "ワールドブリッジ株式会社", "employee_count": 100},
+    {"id": "2", "company_name_lucene": "有限会社コロンブス・ワールド", "company_name_microsoft": "有限会社コロンブス・ワールド","company_name_keyword": "有限会社コロンブス・ワールド", "employee_count": 50},
+    {"id": "3", "company_name_lucene": "株式会社ワールドスマイル", "company_name_microsoft": "株式会社ワールドスマイル","company_name_keyword": "株式会社ワールドスマイル", "employee_count": 200},
+    {"id": "4", "company_name_lucene": "ワールドミリョクセンター株式会社", "company_name_microsoft": "ワールドミリョクセンター株式会社","company_name_keyword": "ワールドミリョクセンター株式会社", "employee_count": 150},
+    {"id": "5", "company_name_lucene": "特定非営利活動法人ワールド会", "company_name_microsoft": "特定非営利活動法人ワールド会", "company_name_keyword": "特定非営利活動法人ワールド会", "employee_count": 75},
+    {"id": "6", "company_name_lucene": "ワールドワン有限会社", "company_name_microsoft": "ワールドワン有限会社", "company_name_keyword": "ワールドワン有限会社", "employee_count": 120},
+    {"id": "7", "company_name_lucene": "ワールド", "company_name_microsoft": "ワールド", "company_name_keyword": "ワールド", "employee_count": 80},
+    {"id": "8", "company_name_lucene": "1ワールド", "company_name_microsoft": "1ワールド", "company_name_keyword": "1ワールド", "employee_count": 60},
+    {"id": "9", "company_name_lucene": "しおワールド", "company_name_microsoft": "しおワールド", "company_name_keyword": "しおワールド", "employee_count": 90},
+    {"id": "10", "company_name_lucene": "株式会社ワールド", "company_name_microsoft": "株式会社ワールド", "company_name_keyword": "株式会社ワールド", "employee_count": 110},
     ]
     add_documents("test-index", ai_search_endpoint, ai_search_key, sample_documents)

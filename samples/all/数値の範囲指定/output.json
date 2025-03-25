@@ -1,7 +1,15 @@
 {
     "@odata.context": "https://srch-guegkrklzq5jk.search.windows.net/indexes('test-index')/$metadata#docs(*)",
-    "@odata.count": 4,
+    "@odata.count": 5,
     "value": [
+        {
+            "@search.score": 1.0,
+            "id": "3",
+            "company_name_lucene": "株式会社ワールドスマイル",
+            "company_name_microsoft": "株式会社ワールドスマイル",
+            "company_name_keyword": "株式会社ワールドスマイル",
+            "employee_count": 200
+        },
         {
             "@search.score": 1.0,
             "id": "4",
@@ -9,14 +17,6 @@
             "company_name_microsoft": "ワールドミリョクセンター株式会社",
             "company_name_keyword": "ワールドミリョクセンター株式会社",
             "employee_count": 150
-        },
-        {
-            "@search.score": 1.0,
-            "id": "7",
-            "company_name_lucene": "ワールド",
-            "company_name_microsoft": "ワールド",
-            "company_name_keyword": "ワールド",
-            "employee_count": 80
         },
         {
             "@search.score": 1.0,
@@ -33,6 +33,14 @@
             "company_name_microsoft": "ワールドブリッジ株式会社",
             "company_name_keyword": "ワールドブリッジ株式会社",
             "employee_count": 100
+        },
+        {
+            "@search.score": 1.0,
+            "id": "10",
+            "company_name_lucene": "株式会社ワールド",
+            "company_name_microsoft": "株式会社ワールド",
+            "company_name_keyword": "株式会社ワールド",
+            "employee_count": 110
         }
     ]
 }

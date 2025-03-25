@@ -1,0 +1,7 @@
+{
+    "api-version": "2024-07-01",
+    "search": "*",
+    "queryType": "simple",
+    "$count": "true",
+    "$filter": "employee_count ge 100 and employee_count le 200"
+}

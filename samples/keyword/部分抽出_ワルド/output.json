@@ -1,12 +1,14 @@
 {
     "@odata.context": "https://srch-guegkrklzq5jk.search.windows.net/indexes('test-index')/$metadata#docs(*)",
+    "@odata.count": 1,
     "value": [
         {
             "@search.score": 1.0,
             "id": "7",
             "company_name_lucene": "ワールド",
             "company_name_microsoft": "ワールド",
-            "company_name_keyword": "ワールド"
+            "company_name_keyword": "ワールド",
+            "employee_count": 80
         }
     ]
 }

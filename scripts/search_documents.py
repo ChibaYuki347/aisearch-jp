@@ -10,13 +10,18 @@ def sanitize_filename(filename):
     # Remove invalid characters for filenames
     return re.sub(r'[\\/*?:"<>|]', "", filename)
 
-def search_documents(index_name:str, ai_search_endpoint:str, ai_search_key:str, search_text:str,analyzer_name:str,search_type:str):
+def search_documents(index_name:str, ai_search_endpoint:str, ai_search_key:str, search_text:str,analyzer_name:str,search_type:str, filter_text:str=None,query_type:str='full'):
     headers = {'Content-Type': 'application/json', 'api-key': ai_search_key}
     params = {
         'api-version': '2024-07-01',
         'search': search_text,
-        'queryType': 'full',
+        'queryType': query_type,
+        '$count': 'true',
     }
+
+    # Add filter parameter if provided
+    if filter_text:
+        params['$filter'] = filter_text
 
     # Sanitize the search text to create a valid directory name
     if search_type is not None:
@@ -68,3 +73,7 @@ if __name__ == "__main__":
     search_documents("test-index", ai_search_endpoint, ai_search_key, "company_name_microsoft:ワールド*", "ja.microsoft", "前方一致")
     search_documents("test-index", ai_search_endpoint, ai_search_key, "company_name_microsoft:/.*ワールド.*/", "ja.microsoft", "部分一致")
     search_documents("test-index", ai_search_endpoint, ai_search_key, "company_name_microsoft:ワ?ルド", "ja.microsoft", "部分抽出_ワ?ルド")
+
+    # Search Range Filter
+    print("Range Filter")
+    search_documents("test-index", ai_search_endpoint, ai_search_key, "*", "all", "数値の範囲指定", filter_text="employee_count ge 100 and employee_count le 200", query_type="simple")

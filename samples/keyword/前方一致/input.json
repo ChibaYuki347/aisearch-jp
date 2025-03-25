@@ -1,5 +1,6 @@
 {
     "api-version": "2024-07-01",
     "search": "company_name_keyword:ワールド*",
-    "queryType": "full"
+    "queryType": "full",
+    "$count": "true"
 }

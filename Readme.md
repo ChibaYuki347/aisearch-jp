@@ -57,4 +57,7 @@ chmod +x script/search_documents.sh
 ## 実行結果について
 
 実行結果は`/samples`以下に保存されています。
-実行結果の説明は[こちら](./docs/Morphological-Analysis-ja.md)
+実行結果の説明は下記に記載しています。
+
+[日本語のアナライザーの形態素解析と検索結果の違い](./docs/Morphological-Analysis-ja.md)  
+[数値の範囲指定](./docs/numericrange-ja.md)
